@@ -165,3 +165,70 @@ ans =
 
     0.5000         0
          0    0.3333
+>> t = [0:0.01:0.98];
+>> y1 = sin(2*pi*4*t);
+>> plot(t,y1)
+>> y2 = cos(2*pi*4*t);
+>> plot(t,y2)
+
+>> plot(t,y1)
+>> hold on
+>> plot(t,y2)
+>> xlabel('time')
+>> ylabel('value')
+>> legend('sin','cos')
+>> title('my plot')
+
+>> figure(1)
+>> plot(t,y1)
+>> figure(2)
+>> plot(t,y2)
+
+>> subplot(1,2,1)
+>> plot(t,y1)
+>> subplot(1,2,2)
+>> plot(t,y2)
+
+>> A = magic(5)
+
+A =
+
+    17    24     1     8    15
+    23     5     7    14    16
+     4     6    13    20    22
+    10    12    19    21     3
+    11    18    25     2     9
+
+>> imagesc(A)
+>> imagesc(A),colorbar,colormap gray
+
+>> for i = 1:10,
+v(i) = 2^i;
+end;
+>> v
+
+v =
+
+  1 至 7 列
+
+           2           4           8          16          32          64         128
+
+  8 至 10 列
+
+         256         512        1024
+>> i = 1;
+>> while i<=5,
+v(i) = 100;
+i = i+1;
+end;
+>> v
+
+v =
+
+  1 至 7 列
+
+         100         100         100         100         100          64         128
+
+  8 至 10 列
+
+         256         512        1024 
